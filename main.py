@@ -104,20 +104,39 @@
 
 
 
-def fetch_sales():
-    print("sales are fetched")
+# def fetch_sales():
+#     print("sales are fetched")
 
-def filterValidOrder():
-    print("filterd valid order is fetched")
+# def filterValidOrder():
+#     print("filterd valid order is fetched")
 
-def Summarized_data():
-    print("Summarized data is fetched")
+# def Summarized_data():
+#     print("Summarized data is fetched")
 
-def generate_report():
-    print("report genrated: ")
-    fetch_sales()
-    filterValidOrder()
-    Summarized_data()
+# def generate_report():
+#     print("report genrated: ")
+#     fetch_sales()
+#     filterValidOrder()
+#     Summarized_data()
 
 
-generate_report()
+# generate_report()
+
+
+# def calculate_bill(cups, price_per_cup):
+#     total_cost_of_chai = cups * price_per_cup
+#     return f"your total bill is {total_cost_of_chai}    "
+
+
+# print(calculate_bill(5,10))
+# print(calculate_bill(4,10))
+
+# def add_vat(price,vat_rate):
+#     total = (price * 2)/100
+#     finalCost = total + price
+#     print(f"after adding {vat_rate}% of vat the total cost is : {finalCost}") 
+
+# orders = [499,299,599]
+
+# for amount in orders:
+#     add_vat(amount,2)
