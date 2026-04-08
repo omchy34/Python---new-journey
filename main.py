@@ -191,3 +191,32 @@
 # add()
 # add()
 # add()
+
+# pure vs impure 
+
+# def pure_price(price):
+#     gst = 10
+#     total = price + gst
+#     return total
+
+# print(pure_price(100))
+
+# price = 150
+# def impure_price():
+#     gst = 10 
+#     global price
+#     price = price + gst 
+#     return price    
+
+# print(impure_price())
+# print(price)
+
+# recursive function
+
+def recu(n):
+    print(n)
+    if n == 0:
+        return "code end"
+    return recu(n-1)
+
+recu(5)
