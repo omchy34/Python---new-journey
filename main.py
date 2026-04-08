@@ -140,3 +140,54 @@
 
 # for amount in orders:
 #     add_vat(amount,2)
+
+# scopes 
+
+# def father():
+#     name = "rohan"
+#     def son():
+#         nonlocal name
+#         name = "mohit"
+#         print(name)
+#     son()
+#     print("after updating the val: ", name)
+
+# father()
+
+# num = 10 
+# def func():
+#     global num
+#     num = 20 
+#     print(num)
+
+# func()
+
+
+# def stu_data(name,age,city):
+#     print(f"name is {name}, age is {age}, city is {city}")
+
+# stu_data(name="om",age=20,city="delhi") # keywords
+
+# def stu_data(*stu_details , **parents_details):
+#     print("stu_details: ",stu_details)
+#     print("parents_details: ",parents_details)
+
+# stu_data("om",20,"delhi",father="rohan",mother="rohan")
+
+# def add(order=[]):
+#     order.append("om")
+#     print(order)
+
+# add()
+# add()
+# add()
+
+# def add(order=None):
+#     if order is None:
+#         order = []
+#     order.append("om")
+#     print(order)
+
+# add()
+# add()
+# add()
