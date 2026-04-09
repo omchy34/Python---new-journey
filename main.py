@@ -213,10 +213,22 @@
 
 # recursive function
 
-def recu(n):
-    print(n)
-    if n == 0:
-        return "code end"
-    return recu(n-1)
+# def recu(n):
+#     print(n)
+#     if n == 0 or n==1:
+#         return 1
+#     else:
+#         return n * recu(n-1)
+    
 
-recu(5)
+# result = recu(5) 
+# print(result)
+
+# lambdas
+
+# degree_type = ["primiry", "middle", "matric", "interdimiate", "graduation"]
+
+# result = list(filter(lambda degree: degree!="primiry", degree_type))
+# print(result) ;
+
+
