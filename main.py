@@ -232,3 +232,40 @@
 # print(result) ;
 
 
+# comprehentions 
+# - list
+
+# Student_name = [
+#     "om choudhary",
+#     "anshu choudhary",
+#     "rupesh jha",
+#     "ankan"
+# ]
+
+# # for item in Student_name:
+# #     if "choudhary" in item:
+# #         print(item)
+
+# result = [stu for stu in Student_name if "choudhary" in stu]
+# print(result)
+
+# - set comprehention 
+
+# fav_fruits = ["apple", "banana", "orange", "apple", "mango"]
+
+# result = {fruit for fruit in fav_fruits if fruit == "apple"}
+# print(result)     
+# 
+# 
+students = {
+    "class-9th": ["om", "anshu", "rupesh"],
+    "class-10th": ["om", "hari", "ani"],
+    "class-11th": ["om", "hari", "ani"],
+    "class-12th": ["kartik", "anshu", "ani"]
+}                                                  
+
+unique_stu = {name for batch in students.values() for name in batch}
+print(unique_stu)
+
+# dict comprehention 
+ 
