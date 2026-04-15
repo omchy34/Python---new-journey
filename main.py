@@ -268,4 +268,16 @@ unique_stu = {name for batch in students.values() for name in batch}
 print(unique_stu)
 
 # dict comprehention 
- 
+
+# price = {
+#     "mango": 100,
+#     "banana": 200,
+#     "orange": 300,
+#     "apple": 400,
+#     "grapes": 500
+# }
+
+# result = {key: value for key, value in price.items() if value > 200}
+# print(result)
+
+# generator comprehention
