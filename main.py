@@ -257,15 +257,15 @@
 # print(result)     
 # 
 # 
-students = {
-    "class-9th": ["om", "anshu", "rupesh"],
-    "class-10th": ["om", "hari", "ani"],
-    "class-11th": ["om", "hari", "ani"],
-    "class-12th": ["kartik", "anshu", "ani"]
-}                                                  
+# students = {
+#     "class-9th": ["om", "anshu", "rupesh"],
+#     "class-10th": ["om", "hari", "ani"],
+#     "class-11th": ["om", "hari", "ani"],
+#     "class-12th": ["kartik", "anshu", "ani"]
+# }                                                  
 
-unique_stu = {name for batch in students.values() for name in batch}
-print(unique_stu)
+# unique_stu = {name for batch in students.values() for name in batch}
+# print(unique_stu)
 
 # dict comprehention 
 
@@ -281,3 +281,46 @@ print(unique_stu)
 # print(result)
 
 # generator comprehention
+
+# def name_gen():
+#     yield "om choudhary"
+#     yield "anshu"
+#     yield "Rohan"
+#     yield "mohan"
+
+
+# name = name_gen()
+# print(name)
+
+# print(next(name))
+# for name in name_gen():
+#     print(name)
+
+# infinte generator 
+
+# def infinate_gen():
+#     count = 1
+#     while True:
+#         yield f"refill the {count}"
+#         count += 1
+
+# refill = infinate_gen()
+
+# for __ in range(5):
+#     print(next(refill))
+
+# send the val to generators 
+
+# def NameStu():
+#     print("welcome to admission management sys")
+#     result = yield
+#     while True:
+#         print(f"ADDMISSON DONE: {result}")
+#         result = yield
+
+
+# result = NameStu()
+# next(result)
+
+# result.send("om choudhary")
+
