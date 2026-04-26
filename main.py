@@ -392,3 +392,25 @@
 #     print(f"{chai_type} is ready! {price}₹")
 
 # store("Masala Chai", 20)
+
+# auth_decorator 
+
+from functools import wraps
+
+def requre_admin(func):
+    @wraps(func)
+    def wrapper(user_role):
+        if user_role != "admin":
+            print("access denied: Admin only")
+            return None # optional but important
+        else:
+            return func(user_role)
+    return wrapper
+
+
+@requre_admin
+def login(auth):
+    print("access granted to admin")
+
+login("admin")
+login("user")
