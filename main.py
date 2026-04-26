@@ -355,20 +355,40 @@
 # data.close() #clean up memory
 
 # decorator 
-from functools import wraps 
-def my_decoretor(func):
-    @wraps(func) 
-    def wrapper():
-        print("before the function run")
-        func()
-        print("after the function run")
-    return wrapper
+
+# from functools import wraps 
+# def my_decoretor(func):
+#     @wraps(func) 
+#     def wrapper():
+#         print("before the function run")
+#         func()
+#         print("after the function run")
+#     return wrapper
 
 
-@my_decoretor 
-def hello():
-    print("hello world")
+# @my_decoretor 
+# def hello():
+#     print("hello world")
 
-hello()
-print(hello.__name__)
+# hello()
+# print(hello.__name__)
 
+# build a logger with decoder 
+
+# from functools import wraps
+
+# def log_activity(func):
+#     @wraps(func)
+#     def wrapper(*args,**kwargs):
+#         print(f"sending order to {func.__name__}")
+#         result = func(*args,**kwargs)
+#         print(f"preparing your order {func.__name__}")
+#         print(f"deliver order from {func.__name__}")
+#         return result
+#     return wrapper
+
+# @log_activity
+# def store(chai_type, price):
+#     print(f"{chai_type} is ready! {price}₹")
+
+# store("Masala Chai", 20)
