@@ -324,3 +324,51 @@
 
 # result.send("om choudhary")
 
+# yeild from and close
+
+# def localPerson():
+#     yield "hari"
+#     yield "om"
+
+# def importedPerson():
+#     yield "sanju"
+#     yield "samson"
+
+# def allPerson():
+#     yield from localPerson()
+#     yield from importedPerson()
+
+# for person in allPerson():
+#     print(person)
+
+# close 
+# def order():
+#     try:
+#         while True:
+#             result = yield "wating for order"   
+#     except:
+#         print("store is closed now.....")
+
+# data = order()
+# print(next(data))
+
+# data.close() #clean up memory
+
+# decorator 
+from functools import wraps 
+def my_decoretor(func):
+    @wraps(func) 
+    def wrapper():
+        print("before the function run")
+        func()
+        print("after the function run")
+    return wrapper
+
+
+@my_decoretor 
+def hello():
+    print("hello world")
+
+hello()
+print(hello.__name__)
+
