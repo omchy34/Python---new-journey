@@ -453,3 +453,43 @@
 # print(newObj.is_teaching) # dose not change the other obj
 # print(teacher.is_teaching) 
 
+# attriibute shadowing in python 
+
+# class store:
+#     chawal = "available"
+#     dal = "unavailable"
+
+# stall = store()
+
+# stall.dal = "available"
+# print(stall.dal)
+
+# print(store.dal)
+
+# del store.dal # after deleting it is available
+# print(stall.dal)
+
+# stall.sabzi = "available"
+# print(stall.sabzi)
+# del stall.sabzi
+# print(stall.sabzi)
+
+
+# self args 
+
+# class greet:
+#     name = "om choudhary"
+
+#     def describe(self):
+#         return f"hii {self.name}..."
+
+
+# user_one = greet()
+# print(user_one.describe())
+# print(greet.describe(user_one))
+
+# user_two = greet()
+
+# user_two.name = "supriya"
+
+# print(user_two.describe())
