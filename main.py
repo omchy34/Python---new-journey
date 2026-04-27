@@ -414,3 +414,42 @@
 
 # login("admin")
 # login("user")
+
+# oops
+
+# from time import process_time
+# class tution:
+#     pass 
+
+# class room:
+#     pass
+
+# print(type(tution)) 
+
+# om = tution()
+
+# print(type(om))
+
+# print(type(om) is tution)
+# print(type(om) is room)
+
+# class,object and nameSpace 
+
+# class teacher:
+#     origin = "india"
+
+# print(teacher.origin)
+
+# teacher.is_teaching = True 
+
+# print(teacher.is_teaching)
+
+# newObj = teacher()
+
+# print(newObj.origin)
+
+# newObj.is_teaching = False 
+
+# print(newObj.is_teaching) # dose not change the other obj
+# print(teacher.is_teaching) 
+
