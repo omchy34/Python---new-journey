@@ -497,15 +497,56 @@
 
 # constructor and init 
 
-class School:
-    def __init__(self,num,student):
-        self.num = num
-        self.student = student
+# class School:
+#     def __init__(self,num,student):
+#         self.num = num
+#         self.student = student
 
-    def summary(self):
-        return f"{self.student} will get {self.num}ml of glass"
+#     def summary(self):
+#         return f"{self.student} will get {self.num}ml of glass"
     
 
-order = School(200,"akash")
+# order = School(200,"akash")
 
-print(order.summary())
+# print(order.summary())
+
+# inheritance and composition 
+
+class School: 
+    def __init__(self,student):
+        self.student = student
+
+    def Particepation(self):
+        return f"{self.student} is selected for particepation certificate"
+    
+class Fisrt(School):
+    def Prize():
+        return f"selected student will get the prize"
+    
+class Distribute:
+    School_cls = School 
+
+    def __init__(self):
+        self.name = self.School_cls("Supriya") 
+
+    def Serve(self):
+        print(f"{self.name.student} got the sepical_price")
+        self.name.Particepation()
+
+class NewDistribution(Distribute):
+    new_cls = Fisrt 
+
+
+
+new_school = School("Om choudhay")
+print(new_school.Particepation())
+
+
+
+
+visti = Distribute()
+visti.Serve()
+
+ano_visti = NewDistribution()
+ano_visti.Serve()
+print(ano_visti.new_cls.Prize())
