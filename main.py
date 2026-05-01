@@ -493,3 +493,19 @@
 # user_two.name = "supriya"
 
 # print(user_two.describe())
+
+
+# constructor and init 
+
+class School:
+    def __init__(self,num,student):
+        self.num = num
+        self.student = student
+
+    def summary(self):
+        return f"{self.student} will get {self.num}ml of glass"
+    
+
+order = School(200,"akash")
+
+print(order.summary())
